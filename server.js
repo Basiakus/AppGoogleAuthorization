@@ -37,10 +37,10 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.get('/logged', function(req, res) {
-	res.render('logged', {
-		user: googleProfile
-	});
+app.get('/logged', function(req, res){
+    res.render('logged', { 
+    	user: "użytkowniku :P" 
+    });
 });
 //Passport routes
 app.get('/auth/google',

@@ -4,5 +4,7 @@ html
 		title="App Google"
 	body
 		h1 Tutaj logujemy sie ze strony startowej
-		h2 zmienna user to: #{user}
-		a(href= '/auth/google' role="button") Zaloguj się do Google
+		if(user)
+			h1 Hi, #{req.user}
+		else
+			a(href= '/auth/google' role="button") Zaloguj się do Google
