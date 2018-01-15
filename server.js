@@ -39,7 +39,7 @@ app.get('/', function(req, res) {
 
 app.get('/logged', function(req, res){
     res.render('logged', { 
-    	user: "użytkowniku :P" 
+    	user: googleProfile.displayName 
     });
 });
 //Passport routes
